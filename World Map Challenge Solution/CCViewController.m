@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.globeImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"worldMap.jpeg"]];
+    self.scrollView.contentSize = self.globeImageView.frame.size;
+    [self.scrollView addSubview:self.globeImageView];
 }
 
 - (void)didReceiveMemoryWarning
